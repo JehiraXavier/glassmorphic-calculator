@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Glassmorphic Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <input type="text" class="screen" placeholder="0" id="screen">
+        <table>
+            <tr>
+                <td>
+                    <button class="clear" onclick="clr()">C</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="display('/')">/</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="display('%')">%</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="backspace()">
+                        <i class="fas fa-backspace"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="display('7')">7</button>
+                </td>
+                <td>
+                    <button onclick="display('8')">8</button>
+                </td>
+                <td>
+                    <button onclick="display('9')">9</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="display('*')">x</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="display('4')">4</button>
+                </td>
+                <td>
+                    <button onclick="display('5')">5</button>
+                </td>
+                <td>
+                    <button onclick="display('6')">6</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="display('-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="display('1')">1</button>
+                </td>
+                <td>
+                    <button onclick="display('2')">2</button>
+                </td>
+                <td>
+                    <button onclick="display('3')">3</button>
+                </td>
+                <td>
+                    <button class="special-characters" onclick="display('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="display('0')">0</button>
+                </td>
+                <td>
+                    <button onclick="display('.')">.</button>
+                </td>
+                <td>
+                    <button class="equals_button" onclick="solve()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
