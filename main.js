@@ -11,7 +11,7 @@ function solve() {
 }
 
 //Function For clearing the screen
-function clear() {
+function clr() {
   document.getElementById("screen").value = "";
 }
 
